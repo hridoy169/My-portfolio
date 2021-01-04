@@ -1,0 +1,48 @@
+.section-skill {
+  padding: 6rem 0;
+  background-image: linear-gradient(to right, $color-pink, $color-dark-violet);
+  background-size: cover;
+  color: $color-primary;
+
+  .skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .skill-grid {
+      background-color: rgba($color-white, 0.8);
+      padding: 2rem;
+      border-radius: 3px;
+      text-align: center;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+      max-width: 25rem;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+      }
+
+      &__img {
+        flex: 1;
+        flex-wrap: wrap;
+
+        img {
+          display: block;
+          height: 20rem;
+          width: 20rem;
+        }
+      }
+
+      &__text {
+        text-align: center;
+        background-image: linear-gradient(to right, $color-blue, $color-red);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        .heading-tertiary {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

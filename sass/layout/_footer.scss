@@ -1,0 +1,38 @@
+.footer {
+  background-color: $color-dark-pearl;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  display: flex;
+
+  &__address {
+    flex: 2;
+    margin-left: 2rem;
+    border-right: 1px solid $color-grey-light;
+  }
+
+  &__digital {
+    flex: 2;
+    margin-left: 2rem;
+  }
+
+  &__item {
+    list-style: none;
+    color: $color-white;
+    opacity: .5;
+  }
+
+  &__heading {
+    color: $color-white;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+      text-decoration: none;
+    }
+  }
+}

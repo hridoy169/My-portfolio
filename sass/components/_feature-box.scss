@@ -1,0 +1,38 @@
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, $color-skyblue, $color-violet);
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .feature-box {
+    background-color: rgba($color-white, 0.8);
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    max-width: 25rem;
+    transition: transform 0.3s;
+
+    flex: 1;
+    flex-wrap: wrap;
+
+    &__icon {
+      font-size: 6rem;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+      background-image: linear-gradient(to right, $color-blue, $color-red);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+    &__text {
+      font-weight: 500;
+    }
+  }
+}
